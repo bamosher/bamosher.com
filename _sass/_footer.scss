@@ -1,0 +1,51 @@
+footer {
+  border-top: 1px solid $grey-color-light;
+  clear: both;
+  margin-top: 4em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 90%;
+  color: $grey-color;
+  font-weight: 100;
+
+  p, ul {
+    margin: 0;
+  }
+
+  p {
+    float: left;
+  }
+
+  ul {
+    float: right;
+    list-style: none;
+
+    li {
+      float: left;
+
+      &:last-of-type {
+        a {
+          margin-right: 0;
+        }
+      }
+    }
+
+    a {
+      display: block;
+      margin-right: 1em;
+      width: 36px;
+      height: 36px;
+    }
+
+    svg, img {
+      width: 36px;
+      height: 36px;
+    }
+
+    span.username {
+      display: none;
+    }
+  }
+}

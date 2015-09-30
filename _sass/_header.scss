@@ -1,0 +1,36 @@
+header {
+  background: $grey-color-light;
+  border-top: 10px solid $brand-color;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 90%;
+  display: table;
+
+  img {
+    padding: 10px;
+    background: white;
+    border: 1px solid $grey-color;
+    display: block;
+    float: left;
+    margin-right: 3em;
+  }
+
+  h1, h2, h3 {
+    color: $grey-color-dark;
+    margin: 0;
+    font-weight: lighter;
+    line-height: 1;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 22px;
+    font-style: italic;
+    margin-bottom: 1em;
+  }
+}

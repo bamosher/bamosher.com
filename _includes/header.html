@@ -1,11 +1,11 @@
-<header>
+<header itemscope itemtype="http://schema.org/Person">
 
-  <a href="{{ site.baseurl }}/"><img src="http://www.gravatar.com/avatar/cfa63d2ac1df40f47b3855327d3a0924?s=150" alt="" /></a>
+  <img itemprop="image" src="http://www.gravatar.com/avatar/cfa63d2ac1df40f47b3855327d3a0924?s=150" alt="Photo of Bennie Mosher" />
 
-  <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+  <h1 itemprop="name">{{ site.title }}</h1>
 
-  <h2>Software Engineer</h2>
+  <h2 itemprop="jobTitle">Software Engineer</h2>
 
-  <h3><a href="mailto:{{ site.email }}">{{ site.email }}</a> | <a href="tel:+19705902040">+1 (970) 590-2040</a></h3>
+  <h3><a href="mailto:{{ site.email }}" itemprop="email">{{ site.email }}</a> | <a href="tel:+19705902040" itemprop="telephone">+1 (970) 590-2040</a></h3>
 
 </header>
