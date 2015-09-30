@@ -9,6 +9,7 @@ footer {
   width: 90%;
   color: $grey-color;
   font-weight: 100;
+  display: inline-table;
 
   p, ul {
     margin: 0;
@@ -16,6 +17,7 @@ footer {
 
   p {
     float: left;
+    line-height: 36px;
   }
 
   ul {
