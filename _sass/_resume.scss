@@ -1,0 +1,88 @@
+section {
+  width: 90%;
+  display: inline-block;
+  padding: 3em 5%;
+  border-bottom: 1px solid $grey-color-light;
+
+  &:nth-last-of-type(1) {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  aside {
+    width: 30%;
+    float: left;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  h3 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+
+    &:first-child {
+      margin-top: 0.16em;
+    }
+
+    &[itemprop="name"] {
+      margin-bottom: 0;
+    }
+  }
+
+  h4 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+
+    &[itemprop="time"] {
+      font-size: 18px;
+      font-style: italic;
+    }
+  }
+
+  h5 {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    &[itemprop="jobTitle"] {
+      margin-top: 1em;
+    }
+  }
+
+  article {
+    width: 70%;
+    float: right;
+  }
+
+  ul {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    &[itemprop="description"] {
+      margin: 1em 0 1em 2em;
+    }
+  }
+
+  li[itemprop="itemListElement"] {
+    float: left;
+    list-style: none;
+
+    &:after {
+      content: ',\00a0';
+    }
+
+    &:nth-last-of-type(1) {
+      &:after {
+        content: '';
+      }
+    }
+  }
+
+  p {
+    margin: 0;
+    line-height: $base-line-height;
+  }
+}
