@@ -2,11 +2,8 @@ footer {
   border-top: 1px solid $grey-color-light;
   clear: both;
   margin-top: 4em;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 5%;
-  padding-right: 5%;
-  width: 90%;
+  padding: 1em 5em;
+  width: calc(100% - 10em);
   color: $grey-color;
   font-weight: 100;
   display: inline-table;
@@ -39,6 +36,12 @@ footer {
       margin-right: 1em;
       width: 36px;
       height: 36px;
+
+      &:hover {
+        path {
+          fill: $brand-color;
+        }
+      }
     }
 
     svg, img {

@@ -1,8 +1,12 @@
 section {
-  width: 90%;
+  width: calc(100% - 10em);
   display: inline-block;
-  padding: 3em 5%;
+  padding: 3em 5em;
   border-bottom: 1px solid $grey-color-light;
+
+  &:nth-of-type(1) {
+    padding-top: 0;
+  }
 
   &:nth-last-of-type(1) {
     border-bottom: none;
@@ -16,6 +20,7 @@ section {
 
   h2 {
     margin: 0;
+    color: $brand-color;
   }
 
   h3 {
@@ -36,7 +41,7 @@ section {
     margin-bottom: 0.5em;
 
     &[itemprop="time"] {
-      font-size: 18px;
+      font-size: $base-font-size;
       font-style: italic;
     }
   }
