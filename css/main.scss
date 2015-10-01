@@ -29,6 +29,10 @@ $grey-color-dark:     darken($grey-color, 25%);
   font-weight: $base-font-weight;
 }
 
+body {
+  border-top: 0.75em solid $brand-color;
+}
+
 a {
   color: $brand-color;
 
@@ -77,5 +81,6 @@ h6 {
   "header",
   "footer",
   "resume",
-  "syntax-highlighting"
+  "posts",
+  "syntax"
 ;
