@@ -1,52 +1,41 @@
-body.posts.single {
+body.posts {
   section {
-    header {
-      padding-top: 0;
-      padding-bottom: 5em;
-      text-align: center;
-    }
+    article.post {
+      width: 100%;
+      margin-bottom: 3em;
 
-    aside {
-      time {
-        font-size: 0.75em;
-        font-weight: 100;
-        color: lighten($grey-color, 20%);
-        display: block;
-        margin-bottom: 2em;
+      aside {
+        width: 15%;
+        float: left;
+
+        time {
+          color: $grey-color-light;
+          font-weight: 100;
+          margin-top: 10px;
+          display: block;
+        }
       }
 
-      ul {
-        list-style: none;
-        font-weight: 100;
-        margin-left: 2em;
-        margin-bottom: 2em;
+      section {
+        width: 85%;
+        float: right;
+        padding: 0;
 
-        li {
-          position: relative;
+        h2 a {
+          color: $grey-color-dark;
+          border-bottom: 1px solid white;
+          font-weight: 700;
+          letter-spacing: 1px;
+          text-decoration: none;
+          font-size: 19px;
+          margin-bottom: 20px;
+          display: inline-block;
 
-          &:after {
-            content: "\2014";
-            left: -1.5rem;
-            top: 0;
-            position: absolute;
-            color: $grey-color-light;
+          &:hover {
+            color: $brand-color;
+            border-bottom: 1px solid $grey-color-light;
           }
         }
-
-        a {
-          text-decoration: none;
-          color: $brand-color;
-        }
-      }
-    }
-
-    article {
-      p {
-        margin-bottom: 2em;
-      }
-
-      pre {
-        padding: 1em;
       }
     }
   }

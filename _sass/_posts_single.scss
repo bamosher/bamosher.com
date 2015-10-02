@@ -1,0 +1,65 @@
+body.posts.single {
+  section {
+    header {
+      padding-top: 0;
+      padding-bottom: 5em;
+      text-align: center;
+    }
+
+    aside {
+      time {
+        font-size: 0.75em;
+        font-weight: 100;
+        color: lighten($grey-color, 20%);
+        display: block;
+        margin-bottom: 2em;
+      }
+
+      ul {
+        list-style: none;
+        font-weight: 100;
+        margin-left: 2em;
+        margin-bottom: 2em;
+
+        li {
+          position: relative;
+
+          &:after {
+            content: "\2014";
+            left: -1.5rem;
+            top: 0;
+            position: absolute;
+            color: $grey-color-light;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          color: $brand-color;
+        }
+      }
+    }
+
+    article {
+      h2 {
+        color: $grey-color-dark;
+      }
+
+      p {
+        margin-bottom: 2em;
+
+        & + ul {
+          margin-top: 0;
+        }
+      }
+
+      pre {
+        padding: 1em;
+      }
+
+      ul {
+        margin: 2em 3em;
+      }
+    }
+  }
+}

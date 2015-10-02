@@ -1,0 +1,17 @@
+---
+layout: default
+bodyClass: "posts"
+---
+<section>
+  {% for post in site.posts %}
+  <article class="post">
+    <aside>
+      <time datetime="{{ post.date | date: '%b %-d, %Y' }}" title="{{ post.date | date: '%b %-d, %Y' }}">{{ post.date | timeago }}</time>
+    </aside>
+    <section>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      {{ post.excerpt }}
+    </section>
+  </article>
+  {% endfor %}
+</section>

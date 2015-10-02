@@ -12,3 +12,6 @@ github_username:  benniemosher
 # Build settings
 markdown: kramdown
 highlighter: pygments
+
+jekyll_timeago:
+  depth: 1
