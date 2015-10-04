@@ -2,185 +2,33 @@
 layout: default
 ---
 
-<section>
+{% for element in site.data.resume | sort: 'order' %}
+
+  {% if element.section != 'employment' %}
+    <section{% if itemtype %} itemscope itemtype="{{ itemtype }}"{% endif %}>
+
+      <aside>
+        <h2{% if itemtype %} itemprop="name"{% endif %}>{{ element.title }}</h2>
+      </aside>
+
+      <article>
+        {{ element.content }}
+      </article>
+
+    </section>
+  {% endif %}
+
+{% endfor %}
+
+<section{% if site.data.resume.last.itemtype %} itemscope itemtype="{{ site.data.resume.last.itemtype }}"{% endif %}>
 
   <aside>
-    <h2>Objective</h2>
+    <h2{% if site.data.resume.last.itemtype %} itemprop="name"{% endif %}>{{ site.data.resume.last.title }}</h2>
   </aside>
 
-  <article>
-    <p>To obtain a position as a software engineer that allows me to utilize my experience as well as creative technical knowledge.</p>
-  </article>
-
-</section>
-
-<section itemscope itemtype="http://schema.org/ItemList">
-  <aside>
-    <h2 itemprop="name">Skills</h2>
-  </aside>
-
-  <article>
-    <ul>
-      <li itemprop="itemListElement">Adobe CS</li>
-      <li itemprop="itemListElement">Agile</li>
-      <li itemprop="itemListElement">Confluence</li>
-      <li itemprop="itemListElement">CSS</li>
-      <li itemprop="itemListElement">Flow Charting</li>
-      <li itemprop="itemListElement">Git</li>
-      <li itemprop="itemListElement">HTML</li>
-      <li itemprop="itemListElement">Javascript
-      <li itemprop="itemListElement">Jira</li>
-      <li itemprop="itemListElement">Linux</li>
-      <li itemprop="itemListElement">Mac OS X</li>
-      <li itemprop="itemListElement">MySQL</li>
-      <li itemprop="itemListElement">PHP</li>
-      <li itemprop="itemListElement">Pivotal Tracker</li>
-      <li itemprop="itemListElement">Postgres</li>
-      <li itemprop="itemListElement">Ruby on Rails</li>
-      <li itemprop="itemListElement">Ruby</li>
-      <li itemprop="itemListElement">SASS</li>
-      <li itemprop="itemListElement">SEM</li>
-      <li itemprop="itemListElement">SEO</li>
-      <li itemprop="itemListElement">Trello</li>
-      <li itemprop="itemListElement">UI Design</li>
-      <li itemprop="itemListElement">UX Design</li>
-      <li itemprop="itemListElement">Wireframing</li>
-      <li itemprop="itemListElement">Wordpress</li>
-    </ul>
-  </article>
-</section>
-
-<section>
-  <aside>
-    <h2>Employment</h2>
-  </aside>
-
-  <article itemscope itemtype="http://schema.org/Organization">
-    <h3 itemprop="name">Amplifi Commerce</h3>
-    <h4 itemprop="time"><time itemprop="startDate" datetime="2015-01">January 2015</time> to <time itemprop="endDate" content="">Present</time></h4>
-    <h5 itemprop="jobTitle">Senior User Interface Developer</h5>
-
-    <ul itemprop="description">
-      <li>Developed UI platform for Oracle Commerce using Bourbon and Neat, RequireJS, Grunt, and NPM</li>
-      <li>Developed testing framework using RSpec and Capybara</li>
-      <li>Helped lead adoption of Agile practices throughout organization</li>
-      <li>Helped develop innovative tools on top of Oracle Commerce to make its development lightning fast</li>
-      <li>Pair programmed with remote team
-    </ul>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Organization">
-    <h3 itemprop="name">NCC Group</h3>
-    <h4 itemprop="time"><time itemprop="startDate" datetime="2013-12">December 2013</time> to <time itemprop="endDate" datetime="2015-01">January 2015</time></h4>
-    <h5 itemprop="jobTitle">Software Engineer</h5>
-
-    <ul itemprop="description">
-      <li>Worked with team to build a security suite for scanning web applications</li>
-      <li>Pair programmed with remote team</li>
-      <li>Maintained gem containing style guide and framework based on Bourbon and Neat</li>
-      <li>Moved internal styling gem from Zurb’s Foundation to Thoughtbot’s Bourbon, Neat, Bitter, and Refills</li>
-    </ul>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Organization">
-    <h3 itemprop="name">CarePilot USA, LLC.</h3>
-    <h4 itemprop="time"><time itemprop="startDate" datetime="2013-06">June 2013</time> to <time itemprop="endDate" datetime="2013-11">November 2013</time></h4>
-    <h5 itemprop="jobTitle">Senior Software Engineer</h5>
-
-    <ul itemprop="description">
-      <li>Fixed numerous bugs in legacy code written in Kohana Framework</li>
-      <li>Added features to application</li>
-      <li>Wrote admin interface for Customer Service in Laravel PHP framework</li>
-      <li>Cleaned up UX</li>
-      <li>Developed TDD using RSpec and Capybara</li>
-      <li>Maintained multiple linux development environments</li>
-    </ul>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Organization">
-    <h3 itemprop="name">Showmobile</h3>
-    <h4 itemprop="time"><time itemprop="startDate" datetime="2013-02">February 2013</time> to <time itemprop="endDate" datetime="2013-06">June 2013</time></h4>
-    <h5 itemprop="jobTitle">Software Engineer</h5>
-
-    <ul itemprop="description">
-      <li>Developed a Ruby on Rails CMS application, that included an API for an iOS application, using Agile Development Processes</li>
-      <li>Lead of Mobile Web Application development to mimick iOS application</li>
-    </ul>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Organization">
-    <h3 itemprop="name">CollisionSync</h3>
-    <h4 itemprop="time"><time itemprop="startDate" datetime="2012-08">August 2012</time> to <time itemprop="endDate" datetime="2013-01">January 2013</time></h4>
-    <h5 itemprop="jobTitle">Senior Software Engineer/Team Lead</h5>
-
-    <ul itemprop="description">
-      <li>Developed new Magento theme using LESS CSS</li>
-      <li>Setup and standardized servers and server deployments</li>
-      <li>Led a team of three developers</li>
-      <li>Managed IT department and all system engineering</li>
-      <li>Lead adoption of Agile standard across organization</li>
-      <li>Wrote multiple Ruby scripts to improve efficiency of data team</li>
-    </ul>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Organization">
-    <h3 itemprop="name">Robert Half International</h3>
-    <h4 itemprop="time"><time itemprop="startDate" datetime="2011-10">October 2011</time> to <time itemprop="endDate" datetime="2012-08">August 2012</time></h4>
-    <h5 itemprop="jobTitle">Software Engineer Contractor</h5>
-
-    <ul itemprop="description">
-      <li>Worked for clients such as Intuit, North County Transit District, and CollisionSync</li>
-    </ul>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Organization">
-    <h3 itemprop="name">Rosemont Media</h3>
-    <h4 itemprop="time"><time itemprop="startDate" datetime="2008-06">June 2008</time> to <time itemprop="endDate" datetime="2011-06">June 2011</time></h4>
-    <h5 itemprop="jobTitle">Senior Web Developer</h5>
-
-    <ul itemprop="description">
-      <li>Developed multiple Desktop and Mobile websites using Wordpress</li>
-      <li>Developed a proprietary Before and After Photo Gallery in CodeIgniter PHP framework using MVC</li>
-      <li>Developed new products for clients (i.e. Video Players, Wordpress plugins, etc.)</li>
-      <li>Managed small team who developed Wordpress themes from Photoshop files</li>
-      <li>Full stack management, from server setup to theme development</li>
-      <li>Wrote linux server set-up scripts in Python to automate DNS, Apache, and Google Apps ￼install</li>
-    </ul>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Organization">
-    <h3 itemprop="name">Einstein Industries</h3>
-    <h4 itemprop="time"><time itemprop="startDate" datetime="2007-07">July 2007</time> to <time itemprop="endDate" datetime="2008-03">March 2008</time></h4>
-    <h5 itemprop="jobTitle">Web Maintenance Technician</h5>
-
-    <ul itemprop="description">
-      <li>Updated client websites (ie. text, buttons, photo additions/removals)</li>
-      <li>Maintained standard compliant code on all projects</li>
-      <li>Fixed and implemented web applications</li>
-    </ul>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Organization">
-    <h3 itemprop="name">Digital Enterprises</h3>
-    <h4 itemprop="time"><time itemprop="startDate" datetime="2007-01">January 2007</time> to <time itemprop="endDate" datetime="2007-04">April 2007</time></h4>
-    <h5 itemprop="jobTitle">Web Developer</h5>
-
-    <ul itemprop="description">
-      <li>Designed webpages, both static and dynamic</li>
-      <li>Developed Wordpress themes</li>
-      <li>Adjusted and corrected premium Wordpress themes</li>
-    </ul>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Organization">
-    <h3 itemprop="name">Christian Academy of Chula Vista</h3>
-    <h4 itemprop="time"><time itemprop="startDate" datetime="2003-06">June 2003</time> to <time itemprop="endDate" datetime="2006-06">June 2006</time></h4>
-    <h5 itemprop="jobTitle">Web Developer and IT Technician</h5>
-
-    <ul itemprop="description">
-      <li>Designed, implemented and maintained campus network infrastructure and computers</li>
-      <li>Developed and maintained academy's web site</li>
-    </ul>
-  </article>
+  {% assign jobs = site.jobs | sort: 'startDate' | reverse %}
+  {% for job in jobs %}
+    {% include job.html job=job %}
+  {% endfor %}
 
 </section>

@@ -1,17 +1,27 @@
 # Site settings
-title: Bennie Mosher
-email: benniemosher@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Software Architect in Windsor, Colorado. Specializing in Ruby on Rails,
-  Javascript, HTML, CSS and solving companies largest problems with easy maintanable solutions.
-baseurl: "" # the subpath of your site, e.g. /blog/
+title: BennieMosher.com
+markdown: kramdown
+highlighter: pygments
 url: "http://benniemosher.com" # the base hostname & protocol for your site
 twitter_username: benniemosher
 github_username:  benniemosher
 
-# Build settings
-markdown: kramdown
-highlighter: pygments
+collections:
+  jobs:
+    output: false
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+gems:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+sass:
+  sass_dir: _sass
+  style: :compressed
 
 jekyll_timeago:
   depth: 1

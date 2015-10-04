@@ -1,0 +1,38 @@
+- section: objective
+  order: 1
+  title: Objective
+  content: To obtain a position as a software engineer that allows me to utilize my experience as well as creative technical knowledge.
+- section: skills
+  order: 2
+  title: Skills
+  itemtype: http://schema.org/ItemList
+  content: '<ul>
+    <li itemprop="itemListElement">Adobe CS</li>
+    <li itemprop="itemListElement">Agile</li>
+    <li itemprop="itemListElement">Confluence</li>
+    <li itemprop="itemListElement">CSS</li>
+    <li itemprop="itemListElement">Flow Charting</li>
+    <li itemprop="itemListElement">Git</li>
+    <li itemprop="itemListElement">HTML</li>
+    <li itemprop="itemListElement">Javascript
+    <li itemprop="itemListElement">Jira</li>
+    <li itemprop="itemListElement">Linux</li>
+    <li itemprop="itemListElement">Mac OS X</li>
+    <li itemprop="itemListElement">MySQL</li>
+    <li itemprop="itemListElement">PHP</li>
+    <li itemprop="itemListElement">Pivotal Tracker</li>
+    <li itemprop="itemListElement">Postgres</li>
+    <li itemprop="itemListElement">Ruby on Rails</li>
+    <li itemprop="itemListElement">Ruby</li>
+    <li itemprop="itemListElement">SASS</li>
+    <li itemprop="itemListElement">SEM</li>
+    <li itemprop="itemListElement">SEO</li>
+    <li itemprop="itemListElement">Trello</li>
+    <li itemprop="itemListElement">UI Design</li>
+    <li itemprop="itemListElement">UX Design</li>
+    <li itemprop="itemListElement">Wireframing</li>
+    <li itemprop="itemListElement">Wordpress</li>
+  </ul>'
+- section: employment
+  order: 3
+  title: Employment

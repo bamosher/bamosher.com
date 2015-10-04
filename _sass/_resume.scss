@@ -58,6 +58,19 @@ section {
   article {
     width: 70%;
     float: right;
+    border-bottom: 1px dotted $grey-color-light;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+
+    &:nth-last-of-type(1) {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+
+    ul[itemprop="description"] {
+      margin-bottom: 0;
+    }
   }
 
   ul {
