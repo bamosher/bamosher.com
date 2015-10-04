@@ -1,0 +1,17 @@
+nav {
+  float: right;
+  margin-top: 52px;
+
+  a {
+    display: block;
+    border: none;
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+
+    &:hover {
+      background: $brand-color;
+      color: white;
+    }
+  }
+}

@@ -16,8 +16,8 @@ $small-font-size:     $base-font-size * 0.875;
 $spacing-unit:        30px;
 
 $brand-color:         #a11400;
-$brand-color-light:   lighten($brand-color, 40%);
-$brand-color-dark:    darken($brand-color, 25%);
+$brand-color-light:   lighten($brand-color, 10%);
+$brand-color-dark:    darken($brand-color, 10%);
 
 $grey-color:          #828282;
 $grey-color-light:    lighten($grey-color, 40%);
@@ -35,11 +35,12 @@ body {
 
 a {
   color: $brand-color;
-  border-bottom: 1px solid;
+  border-bottom: 1px dotted;
   text-decoration: none;
 
   &:hover {
     color: $brand-color-light;
+    border-bottom-style: solid;
   }
 
   &:focus {
@@ -78,18 +79,15 @@ h6, h6 a {
   font-style: italic;
 }
 
-blockquote {
+blockquote, q {
   border-left: 2px solid $grey-color-light;
   margin: 1.5em 0;
   padding-left: 0.75em;
+  quotes: none;
 
   p {
     margin-bottom: 1em !important;
   }
-}
-
-blockquote, q {
-  quotes: none;
 }
 
 cite {
@@ -104,6 +102,7 @@ cite {
 @import
   "footer",
   "header",
+  "nav",
   "posts_single",
   "posts",
   "resume",

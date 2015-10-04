@@ -1,11 +1,27 @@
 <header itemscope itemtype="http://schema.org/Person">
 
-  <img itemprop="image" src="http://www.gravatar.com/avatar/cfa63d2ac1df40f47b3855327d3a0924?s=150" alt="Photo of Bennie Mosher" />
+  <img itemprop="image" src="{{ site.data.owner.email | to_gravatar }}" alt="Photo of {{ site.data.owner.name }}" />
 
-  <h1 itemprop="name">{{ site.title }}</h1>
+  <section>
+    <h1 itemprop="name">{{ site.data.owner.name }}</h1>
 
-  <h2 itemprop="jobTitle">Software Engineer</h2>
+    <h2 itemprop="jobTitle">{{ site.data.owner.job_title }}</h2>
 
-  <h3><a href="mailto:{{ site.email }}" itemprop="email">{{ site.email }}</a><br /><a href="tel:+19705902040" itemprop="telephone">+1 (970) 590-2040</a></h3>
+    <h3>
+      <a href="mailto:{{ site.data.owner.email }}" itemprop="email">{{ site.data.owner.email }}</a><br />
+      <a href="tel:{{ site.data.owner.phone_number }}" itemprop="telephone">{{ site.data.owner.formatted_phone_number }}</a>
+    </h3>
+  </section>
 
+  {% if site.posts | size > 0 %}
+  <nav>
+    {% if page.name == 'posts.md' %}
+      <a href="/">Resume</a>
+    {% endif %}
+
+    {% if page.name == 'index.html' %}
+      <a href="/posts">Posts</a>
+    {% endif %}
+  </nav>
+  {% endif %}
 </header>

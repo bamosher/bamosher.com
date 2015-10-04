@@ -7,7 +7,23 @@ header {
     border-radius: 100%;
     display: block;
     float: left;
-    margin-right: 3em;
+    margin-right: 36px;
+  }
+
+  section {
+    float: left;
+    width: auto;
+    margin-top: 11px;
+    padding: 0;
+
+    h2 {
+      color: $grey-color-dark;
+    }
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
 
   h1, h2, h3 {
@@ -17,14 +33,15 @@ header {
   }
 
   h2 {
+    font-size: 26px;
     font-style: italic;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.2em;
   }
 
   h3 a {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 100;
-    margin-bottom: 0.2em;
     display: inline-block;
+    line-height: 1.2;
   }
 }
