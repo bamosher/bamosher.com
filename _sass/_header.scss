@@ -3,11 +3,22 @@ header {
   width: calc(100% - 10em);
   display: table;
 
+  @include bp(iphone-6-plus) {
+    padding: 2.5em;
+    width: calc(100% - 5em);
+  }
+
   img {
     border-radius: 100%;
     display: block;
     float: left;
     margin-right: 36px;
+
+    @include bp(iphone-6-plus) {
+      margin-right: auto;
+      margin-left: auto;
+      float: none;
+    }
   }
 
   section {
@@ -15,6 +26,13 @@ header {
     width: auto;
     margin-top: 11px;
     padding: 0;
+
+    @include bp(iphone-6-plus) {
+      width: 100%;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      text-align: center;
+    }
 
     h2 {
       color: $grey-color-dark;

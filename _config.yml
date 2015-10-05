@@ -6,6 +6,14 @@ url: "http://benniemosher.com" # the base hostname & protocol for your site
 twitter_username: benniemosher
 github_username:  benniemosher
 
+defaults:
+  -
+    scope:
+      path: ""      # empty string for all files
+      type: posts   # limit to posts
+    values:
+      is_post: true # automatically set is_post=true for all posts
+
 collections:
   jobs:
     output: false

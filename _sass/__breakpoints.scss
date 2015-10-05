@@ -1,0 +1,12 @@
+// Device Widths
+$iphone-6-plus: 414px;
+
+@mixin bp($point) {
+
+  $bp-iphone-6-plus: "(max-width: #{$iphone-6-plus})";
+
+  @if $point == iphone-6-plus {
+    @media #{$bp-iphone-6-plus} { @content; }
+  }
+  
+}

@@ -8,6 +8,14 @@ footer {
   font-weight: 100;
   display: inline-table;
 
+  @include bp(iphone-6-plus) {
+    width: 100%;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    width: calc(100% - 5em);
+    height: 105px;
+  }
+
   p, ul {
     margin: 0;
   }
@@ -16,11 +24,26 @@ footer {
     float: left;
     font-size: 0.9em;
     line-height: 36px;
+
+    @include bp(iphone-6-plus) {
+      line-height: 1;
+      padding-bottom: 1em;
+      text-align: center;
+      width: 100%;
+    }
   }
 
   ul {
     float: right;
     list-style: none;
+
+    @include bp(iphone-6-plus) {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+      display: table;
+      padding-left: 0;
+    }
 
     li {
       float: left;

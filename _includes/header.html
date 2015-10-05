@@ -19,6 +19,11 @@
       <a href="/">Resume</a>
     {% endif %}
 
+    {% if page.is_post %}
+      <a href="/" class="dual">Resume</a>
+      <a href="/posts" class="dual">Posts</a>
+    {% endif %}
+
     {% if page.name == 'index.html' %}
       <a href="/posts">Posts</a>
     {% endif %}
