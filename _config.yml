@@ -24,6 +24,7 @@ exclude:
 gems:
   - jekyll-sitemap
   - jekyll-redirect-from
+  - jekyll-feed
 
 sass:
   sass_dir: _sass
