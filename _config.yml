@@ -1,16 +1,8 @@
 # Site settings
-title: BennieMosher.com
+title: BAMosher.com
 markdown: kramdown
 highlighter: pygments
-url: "http://benniemosher.com" # the base hostname & protocol for your site
-
-defaults:
-  -
-    scope:
-      path: ""      # empty string for all files
-      type: posts   # limit to posts
-    values:
-      is_post: true # automatically set is_post=true for all posts
+url: "http://bamosher.com" # the base hostname & protocol for your site
 
 collections:
   jobs:
@@ -24,7 +16,6 @@ exclude:
 gems:
   - jekyll-sitemap
   - jekyll-redirect-from
-  - jekyll-feed
 
 sass:
   sass_dir: _sass

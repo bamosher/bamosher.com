@@ -1,6 +1,6 @@
 <header itemscope itemtype="http://schema.org/Person">
 
-  <img itemprop="image" src="https://www.gravatar.com/avatar/cfa63d2ac1df40f47b3855327d3a0924?s=150&amp;d=blank" alt="Photo of {{ site.data.owner.name }}" />
+  <img itemprop="image" src="https://www.gravatar.com/avatar/{{ site.data.owner.gravatar_hash }}?s=150&amp;d=blank" alt="Photo of {{ site.data.owner.name }}" />
 
   <section>
     <h1 itemprop="name">{{ site.data.owner.name }}</h1>
@@ -12,21 +12,4 @@
       <a href="tel:{{ site.data.owner.phone_number }}" itemprop="telephone">{{ site.data.owner.formatted_phone_number }}</a>
     </h3>
   </section>
-
-  {% if site.posts | size > 0 %}
-  <nav>
-    {% if page.name == 'posts.md' %}
-      <a href="/">Resume</a>
-    {% endif %}
-
-    {% if page.is_post %}
-      <a href="/" class="dual">Resume</a>
-      <a href="/posts" class="dual">Posts</a>
-    {% endif %}
-
-    {% if page.name == 'index.html' %}
-      <a href="/posts">Posts</a>
-    {% endif %}
-  </nav>
-  {% endif %}
 </header>

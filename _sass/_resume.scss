@@ -100,21 +100,6 @@ section {
     }
   }
 
-  li[itemprop="itemListElement"] {
-    float: left;
-    list-style: none;
-
-    &:after {
-      content: ',\00a0';
-    }
-
-    &:nth-last-of-type(1) {
-      &:after {
-        content: '';
-      }
-    }
-  }
-
   p {
     margin: 0;
     line-height: $base-line-height;

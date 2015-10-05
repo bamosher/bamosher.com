@@ -63,6 +63,8 @@ footer {
       border: none;
 
       &:hover {
+        border-bottom: none;
+        
         path {
           fill: $brand-color;
         }
