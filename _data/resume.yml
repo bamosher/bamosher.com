@@ -5,23 +5,22 @@
 - section: skills
   order: 2
   title: Skills
-  itemtype: http://schema.org/ItemList
-  content: '<ul>
-    <li itemprop="itemListElement">Extensive knowledge of PC hardware and software configurations using DOS and all Windows platforms.</li>
-    <li itemprop="itemListElement">Maintain Symantec Ghost images of standard PC configurations as well as for data protection</li>
-    <li itemprop="itemListElement">Excellent understanding of various applications and the networking services of Windows 95 and 98, Windows NT, 2000 and XP, and Novell.</li>
-    <li itemprop="itemListElement">Fluent in the use of Rumba on NT workstations, MS Office suites (95, 97, 2000, and XP), MS Outlook and Outlook Express, Lotus Notes, and Internet Explorer.</li>
-    <li itemprop="itemListElement">Competent Mainsaver – Enterprise Asset Management – administrator.</li>
-    <li itemprop="itemListElement">Experienced Windows NT and Windows 2000 administrator with exposure to Novell Netware administration.</li>
-    <li itemprop="itemListElement">Strong people and communications skills.</li>
+  content: '<ul itemscope itemtype="http://schema.org/ItemList">
+    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">Extensive knowledge of PC hardware and software configurations using DOS and all Windows platforms.</li>
+    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">Maintain Symantec Ghost images of standard PC configurations as well as for data protection</li>
+    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">Excellent understanding of various applications and the networking services of Windows 95 and 98, Windows NT, 2000 and XP, and Novell.</li>
+    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">Fluent in the use of Rumba on NT workstations, MS Office suites (95, 97, 2000, and XP), MS Outlook and Outlook Express, Lotus Notes, and Internet Explorer.</li>
+    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">Competent Mainsaver – Enterprise Asset Management – administrator.</li>
+    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">Experienced Windows NT and Windows 2000 administrator with exposure to Novell Netware administration.</li>
+    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">Strong people and communications skills.</li>
   </ul>'
 - section: education
   order: 3
   title: Education
-  content: '<ul>
-    <li itemprop="itemListElement">AAS, Community College of the Air Force, 1994, Avionics Technology</li>
-    <li itemprop="itemListElement">Certificates – Implementing and Maintaining Microsoft Windows 2000 Professional and Server issued by New Horizons, Dell Certified Technician (Dimension and Optiplex Desktops, Dell Workstations and Servers) issued by Dell, Advanced Microsoft Office issued by ExecuTrain</li>
-    <li itemprop="itemListElement">Graduate of Westminster High School, Westminster, CO.</li>
+  content: '<ul itemscope itemtype="http://schema.org/ItemList">
+    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">AAS, Community College of the Air Force, 1994, Avionics Technology</li>
+    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">Certificates – Implementing and Maintaining Microsoft Windows 2000 Professional and Server issued by New Horizons, Dell Certified Technician (Dimension and Optiplex Desktops, Dell Workstations and Servers) issued by Dell, Advanced Microsoft Office issued by ExecuTrain</li>
+    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">Graduate of Westminster High School, Westminster, CO.</li>
   </ul>'
 - section: employment
   order: 4

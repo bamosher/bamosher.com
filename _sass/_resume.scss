@@ -93,10 +93,12 @@ section {
     display: inline-block;
     margin-top: 0;
     margin-bottom: 0;
+    margin-left: 2em;
     padding-left: 0;
 
     &[itemprop="description"] {
-      margin: 1em 0 1em 2em;
+      margin-top: 1em;
+      margin-bottom: 1em;
     }
   }
 
