@@ -1,6 +1,6 @@
 ---
 employer: Amplifi Commerce
-startDate: 2015-01
+startDate: 2015-01-05
 endDate: Present
 title: Senior User Interface Developer
 ---

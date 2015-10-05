@@ -1,7 +1,7 @@
 ---
 employer: Rosemont Media
-startDate: 2008-06
-endDate: 2011-06
+startDate: 2008-06-01
+endDate: 2011-06-01
 title: Senior Web Developer
 ---
 - Developed multiple Desktop and Mobile websites using Wordpress

@@ -1,7 +1,7 @@
 ---
 employer: Einstein Industries
-startDate: 2007-07
-endDate: 2008-03
+startDate: 2007-07-01
+endDate: 2008-03-01
 title: Web Maintenance Technician
 ---
 - Updated client websites (ie. text, buttons, photo additions/removals)

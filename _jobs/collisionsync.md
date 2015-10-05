@@ -1,7 +1,7 @@
 ---
 employer: CollisionSync
-startDate: 2012-07
-endDate: 2013-01
+startDate: 2012-07-01
+endDate: 2013-01-01
 title: Senior Software Engineer/Team Lead
 ---
 - Developed new Magento theme using LESS CSS

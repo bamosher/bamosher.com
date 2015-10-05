@@ -1,7 +1,7 @@
 ---
 employer: NCC Group
-startDate: 2013-12
-endDate: 2015-01
+startDate: 2013-12-01
+endDate: 2015-01-01
 title: Software Engineer
 ---
 - Worked with team to build a security suite for scanning web applications

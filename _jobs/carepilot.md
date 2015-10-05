@@ -1,7 +1,7 @@
 ---
 employer: CarePilot USA, LLC.
-startDate: 2013-06
-endDate: 2013-11
+startDate: 2013-06-01
+endDate: 2013-11-01
 title: Senior Software Engineer
 ---
 - Fixed numerous bugs in legacy code written in Kohana Framework
