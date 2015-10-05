@@ -2,20 +2,26 @@
 layout: default
 bodyClass: "posts single"
 ---
-<section>
+<section itemscope itemtype="http://schema.org/BlogPosting">
 
   <header>
-    <h1>{{ page.title }}</h1>
-    {% if page.meta %}
-      <p>{{ page.meta }}</p>
-    {% endif %}
+    <h1 itemprop="name headline">{{ page.title }}</h1>
+    <h2 class="byline">
+      Written by
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <a href="https://plus.google.com/+{{ site.data.owner.google_plus_username }}" target="_blank" itemprop="url" rel="author">Bennie Mosher</a>
+      </span>
+    </h2>
   </header>
 
   <aside>
-    <time datetime="{{ page.date | date: '%b %-d, %Y' }}" title="{{ page.date | date: '%b %-d, %Y' }}">{{ page.date | timeago }}</time>
+    <div class="published-on">
+      Published
+      <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}" title="{{ page.date | date: '%b %-d, %Y' }}">{{ page.date | timeago }}</time>
+    </div>
 
     {% if page.categories %}
-    <h4>Categories</h4>
+    <h2>Categories</h2>
     <ul>
       {% for category in page.categories %}
         <li><a href="#">{{ category }}</a></li>
@@ -24,7 +30,7 @@ bodyClass: "posts single"
     {% endif %}
 
     {% if page.tags %}
-    <h4>Tags</h4>
+    <h2>Tags</h2>
     <ul>
       {% for tag in page.tags %}
         <li><a href="#">{{ tag }}</a></li>
@@ -33,8 +39,8 @@ bodyClass: "posts single"
     {% endif %}
   </aside>
 
-  <article>
-    {{ content }}
+  <article itemprop="articleBody">
+    <div itemprop="articleBody">{{ content }}</div>
   </article>
 
 </section>

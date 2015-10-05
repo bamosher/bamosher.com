@@ -3,8 +3,6 @@ title: BennieMosher.com
 markdown: kramdown
 highlighter: pygments
 url: "http://benniemosher.com" # the base hostname & protocol for your site
-twitter_username: benniemosher
-github_username:  benniemosher
 
 defaults:
   -

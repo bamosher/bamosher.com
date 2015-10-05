@@ -18,14 +18,20 @@ body.posts {
 
         @include bp(iphone-6-plus) {
           width: 100%;
+          padding-bottom: 0.5em;
         }
 
         time {
-          color: $grey-color-light;
+          color: lighten($grey-color, 20%);
           font-weight: 100;
-          line-height: 20px;
-          margin-top: 10px;
+          line-height: 1;
+          font-size: 0.9em;
+          margin-top: 0.25em;
           display: block;
+
+          @include bp(iphone-6-plus) {
+            margin-top: 0;
+          }
         }
       }
 
@@ -39,20 +45,35 @@ body.posts {
           float: left;
         }
 
-        h2 a {
-          color: $grey-color-dark;
-          border-bottom: 1px solid white;
-          font-weight: 700;
-          letter-spacing: 1px;
-          text-decoration: none;
-          font-size: 19px;
-          margin-bottom: 20px;
+        h2 {
           display: inline-block;
 
-          &:hover {
-            color: $brand-color;
-            border-bottom: 1px solid $grey-color-light;
+          a {
+            color: $grey-color-dark;
+            border-bottom: 1px solid white;
+            font-weight: 700;
+            letter-spacing: 1px;
+            line-height: 1;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+
+            &:hover {
+              color: $brand-color;
+              border-bottom: 1px solid $grey-color-light;
+            }
           }
+        }
+
+        h3.byline, h3.byline a {
+          margin-top: 0;
+          margin-bottom: 1.4em;
+          font-style: italic;
+          font-size: 0.85em;
+        }
+
+        h3.byline a {
+          margin-bottom: 0;
         }
       }
     }
