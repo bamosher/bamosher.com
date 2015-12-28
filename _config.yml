@@ -1,25 +1,26 @@
 # Site settings
+timezone: "America/Los Angeles"
 title: BAMosher.com
+email: ben@bamosher.com
 markdown: kramdown
 highlighter: pygments
-url: "http://bamosher.com" # the base hostname & protocol for your site
-
+url: "https://bamosher.com" # the base hostname & protocol for your site
 collections:
   jobs:
     output: false
-
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-
+  - node_modules
+  - package.json
 gems:
-  - jekyll-sitemap
+  - jekyll-feed
   - jekyll-redirect-from
-
+  - jekyll-sitemap
+  - jekyll-timeago
 sass:
   sass_dir: _sass
   style: :compressed
-
 jekyll_timeago:
   depth: 1
