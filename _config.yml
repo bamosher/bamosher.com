@@ -1,5 +1,5 @@
 # Site settings
-timezone: "America/Los Angeles"
+timezone: "America/Denver"
 title: BAMosher.com
 email: ben@bamosher.com
 markdown: kramdown
@@ -21,6 +21,6 @@ gems:
   - jekyll-timeago
 sass:
   sass_dir: _sass
-  style: :compressed
+  style: compressed
 jekyll_timeago:
   depth: 1

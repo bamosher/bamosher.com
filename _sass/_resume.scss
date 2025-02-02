@@ -1,3 +1,6 @@
+@import "variables";
+@import "_breakpoints";
+
 section {
   width: calc(100% - 10em);
   display: inline-block;

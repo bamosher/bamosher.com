@@ -1,3 +1,6 @@
+@import "variables";
+@import "_breakpoints";
+
 footer {
   border-top: 1px solid $grey-color-light;
   clear: both;
@@ -64,7 +67,7 @@ footer {
 
       &:hover {
         border-bottom: none;
-        
+
         path {
           fill: $brand-color;
         }
