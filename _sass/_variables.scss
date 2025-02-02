@@ -1,0 +1,17 @@
+@use "sass:color";
+
+$base-font-family:    Roboto, Helvetica, Arial, sans-serif;
+$base-font-size:      18px;
+$base-line-height:    1.5;
+$base-font-weight:    300;
+$small-font-size:     $base-font-size * 0.875;
+
+$spacing-unit:        30px;
+
+$brand-color:         #337FC6;
+$brand-color-light:   color.adjust($brand-color, $lightness: 10%);
+$brand-color-dark:    color.adjust($brand-color, $lightness: -10%);
+
+$grey-color:          #828282;
+$grey-color-light:    color.adjust($brand-color, $lightness: 40%);
+$grey-color-dark:     color.adjust($brand-color, $lightness: -25%);
