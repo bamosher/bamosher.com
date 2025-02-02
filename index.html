@@ -2,22 +2,18 @@
 layout: default
 ---
 
-{% for element in site.data.resume | sort: 'order' %}
-
+{% assign sorted_resume = site.data.resume | sort: 'order' %}
+{% for element in sorted_resume %}
   {% if element.section != 'employment' %}
     <section{% if itemtype %} itemscope itemtype="{{ itemtype }}"{% endif %}>
-
       <aside>
         <h2{% if itemtype %} itemprop="name"{% endif %}>{{ element.title }}</h2>
       </aside>
-
       <article>
         {{ element.content }}
       </article>
-
     </section>
   {% endif %}
-
 {% endfor %}
 
 <section{% if site.data.resume.last.itemtype %} itemscope itemtype="{{ site.data.resume.last.itemtype }}"{% endif %}>

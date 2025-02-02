@@ -1,12 +1,12 @@
-@import "variables";
-@import "_breakpoints";
+@use "variables";
+@use "_breakpoints";
 
 header {
   padding: 8em 5em;
   width: calc(100% - 10em);
   display: table;
 
-  @include bp(iphone-6-plus) {
+  @include breakpoints.bp(iphone-6-plus) {
     padding: 2.5em;
     width: calc(100% - 5em);
   }
@@ -17,7 +17,7 @@ header {
     float: left;
     margin-right: 36px;
 
-    @include bp(iphone-6-plus) {
+    @include breakpoints.bp(iphone-6-plus) {
       margin-right: auto;
       margin-left: auto;
       float: none;
@@ -30,7 +30,7 @@ header {
     margin-top: 11px;
     padding: 0;
 
-    @include bp(iphone-6-plus) {
+    @include breakpoints.bp(iphone-6-plus) {
       width: 100%;
       margin-top: 1em;
       margin-bottom: 1em;
@@ -38,7 +38,7 @@ header {
     }
 
     h2 {
-      color: $grey-color-dark;
+      color: variables.$grey-color-dark;
     }
 
     h3 {
@@ -48,7 +48,7 @@ header {
   }
 
   h1, h2, h3 {
-    color: $grey-color-dark;
+    color: variables.$grey-color-dark;
     margin: 0;
     font-weight: 100;
   }

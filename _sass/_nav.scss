@@ -1,11 +1,11 @@
-@import "variables";
-@import "_breakpoints";
+@use "variables";
+@use "_breakpoints";
 
 nav {
   float: right;
   margin-top: 52px;
 
-  @include bp(iphone-6-plus) {
+  @include breakpoints.bp(iphone-6-plus) {
     float: none;
     margin-top: 0;
     clear: both;
@@ -20,13 +20,13 @@ nav {
     padding: 0.5em 1em;
     border-radius: 5px;
 
-    @include bp(iphone-6-plus) {
+    @include breakpoints.bp(iphone-6-plus) {
       text-align: center;
       flex: 1 1 auto;
     }
 
     &:hover {
-      background: $brand-color;
+      background: variables.$brand-color;
       color: white;
     }
   }
