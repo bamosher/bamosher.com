@@ -1,6 +1,8 @@
 <header itemscope itemtype="http://schema.org/Person">
 
+  {% if page.pdf != true %}
   <img itemprop="image" src="https://www.gravatar.com/avatar/{{ site.data.owner.gravatar_hash }}?s=150&amp;d=blank" alt="Photo of {{ site.data.owner.name }}" />
+  {% endif %}
 
   <section>
     <h1 itemprop="name">{{ site.data.owner.name }}</h1>
