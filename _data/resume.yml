@@ -1,27 +1,33 @@
-- section: profile
+---
+- section: summary
   order: 1
-  title: Profile
-  content: Combine effective analysis, trouble-shooting and repair skills with knowledge of Internet and Intranet connectivity and customer support as an Information Technology Specialist. Energetic and effective customer oriented team player. Great attention to detail. Follow projects through to completion. I am seeking a position that will further challenge these talents and broaden this skill set.
+  title: Professional Summary
+  content: |
+    Seasoned <strong>IT Systems Administrator & Helpdesk Manager</strong> with
+    <strong>20+ years of experience</strong> in <strong>enterprise IT support
+    system administration, network management, and helpdesk operations</strong>.
+    Proven expertise in <strong>Active Directory, Windows Server, VMware, and
+    troubleshooting complex IT environments</strong>. Adept at leading teams,
+    optimizing IT infrastructure, and implementing business continuity
+    strategies. Strong analytical, problem-solving, and customer service skills.
 - section: skills
   order: 2
-  title: Skills
-  content: '<ul>
-    <li>Extensive knowledge of PC hardware and software configurations using DOS and all Windows platforms.</li>
-    <li>Maintain Symantec Ghost images of standard PC configurations as well as for data protection</li>
-    <li>Excellent understanding of various applications and the networking services of Windows 95 and 98, Windows NT, 2000 and XP, and Novell.</li>
-    <li>Fluent in the use of Rumba on NT workstations, MS Office suites (95, 97, 2000, and XP), MS Outlook and Outlook Express, Lotus Notes, and Internet Explorer.</li>
-    <li>Competent Mainsaver – Enterprise Asset Management – administrator.</li>
-    <li>Experienced Windows NT and Windows 2000 administrator with exposure to Novell Netware administration.</li>
-    <li>Strong people and communications skills.</li>
-  </ul>'
-- section: education
-  order: 3
-  title: Education
-  content: '<ul>
-    <li>AAS, Community College of the Air Force, 1994, Avionics Technology</li>
-    <li>Certificates – Implementing and Maintaining Microsoft Windows 2000 Professional and Server issued by New Horizons, Dell Certified Technician (Dimension and Optiplex Desktops, Dell Workstations and Servers) issued by Dell, Advanced Microsoft Office issued by ExecuTrain</li>
-    <li>Graduate of Westminster High School, Westminster, CO.</li>
-  </ul>'
+  title: Core Skills & Competencies
+  skills:
+    - <strong>System Administration</strong> - Windows Server, Active Directory, VMware, Citrix
+    - <strong>Helpdesk & IT Support</strong> - Troubleshooting, Remote Support, User Training
+    - <strong>Networking & Infrastructure</strong> - LAN/WAN, VPN, Citrix Virtualization, Remote Access Solutions
+    - <strong>Software & Tools</strong> - Microsoft Office, Microsoft Windows, Microsoft365, MacOS
+    - <strong>Leadership & Project Management</strong> - Team Supervision, Process Improvement, Disaster Recovery
 - section: employment
-  order: 4
+  order: 3
   title: Employment
+- section: educations-certifications
+  order: 4
+  title: Education & Certifications
+  educations-certifications:
+    - <strong>AAS, Avionics Technology</strong> – Community College of the Air Force, 1994
+    - Microsoft Certified - <strong>Windows 2000 Professional & Server</strong> – New Horizons
+    - <strong>Dell Certified Technician</strong> – Dimension & OptiPlex Desktops, Dell Workstations & Servers
+    - <strong>Advanced Microsoft Office</strong> – ExecuTrain
+    - <strong>High School Diploma</strong> – Westminster High School, Westminster, CO

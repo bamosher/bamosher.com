@@ -1,30 +1,59 @@
 ---
 layout: default
 ---
-
-{% assign sorted_resume = site.data.resume | sort: 'order' %}
-{% for element in sorted_resume %}
-  {% if element.section != 'employment' %}
+{% assign resume = site.data.resume %}
+{% for element in resume %}
+  {% if element.section == 'summary' %}
     <section{% if itemtype %} itemscope itemtype="{{ itemtype }}"{% endif %}>
       <aside>
-        <h2{% if itemtype %} itemprop="name"{% endif %}>{{ element.title }}</h2>
+        <h2 id="professional-summary"{% if itemtype %} itemprop="name"{% endif %}>{{ element.title }}</h2>
       </aside>
       <article>
-        {{ element.content }}
+        <p>{{ element.content }}</p>
+      </article>
+    </section>
+  {% endif %}
+
+  {% if element.section == 'skills' %}
+    <section{% if itemtype %} itemscope itemtype="{{ itemtype }}"{% endif %}>
+      <aside>
+        <h2 id="core-skills-competencies"{% if itemtype %} itemprop="name"{% endif %}>{{ element.title }}</h2>
+      </aside>
+      <article>
+        <ul>
+          {% for skill in element.skills %}
+            <li>{{ skill }}</li>
+          {% endfor %}
+        </ul>
       </article>
     </section>
   {% endif %}
 {% endfor %}
 
 <section{% if site.data.resume.last.itemtype %} itemscope itemtype="{{ site.data.resume.last.itemtype }}"{% endif %}>
-
   <aside>
     <h2{% if site.data.resume.last.itemtype %} itemprop="name"{% endif %}>{{ site.data.resume.last.title }}</h2>
   </aside>
 
-  {% assign jobs = site.jobs | sort: 'startDate' | reverse %}
+  {% assign jobs = site.jobs | sort: 'startDate' | sort: 'endDate' | reverse %}
   {% for job in jobs %}
     {% include job.html job=job %}
   {% endfor %}
-
 </section>
+
+{% for element in resume %}
+  {% if element.section == 'educations-certifications' %}
+    <section{% if itemtype %} itemscope itemtype="{{ itemtype }}"{% endif %}>
+      <aside>
+        <h2 id="education-certifications"{% if itemtype %} itemprop="name"{% endif %}>{{ element.title }}</h2>
+      </aside>
+      <article>
+        <ul>
+          {% for cert in element.educations-certifications %}
+            <li>{{ cert }}</li>
+          {% endfor %}
+        </ul>
+      </article>
+    </section>
+  {% endif %}
+{% endfor %}
