@@ -1,10 +1,12 @@
 <article itemscope itemtype="http://schema.org/Organization">
-  <h3 itemprop="name">{{ job.employer }}</h3>
-  <h4>
-    <time datetime="{{ job.startDate }}">{{ job.startDate | date: '%Y' }}</time> to
-    <time datetime="{{ job.endDate }}">{{ job.endDate | date: '%Y' }}</time>
-  </h4>
-  <h5 itemprop="name">{{ job.title }}</h5>
+  <h3 itemprop="name">
+    {{ job.employer }}
+    <span>
+      (<time datetime="{{ job.startDate }}">{{ job.startDate | date: '%Y' }}</time> to
+      <time datetime="{{ job.endDate }}">{{ job.endDate | date: '%Y' }}</time>)
+    </span>
+  </h3>
+  <h4 itemprop="name">{{ job.title }}</h4>
 
   <ul itemprop="description">
     {{ job.content | remove:'<ul>' | remove:'</ul>' }}

@@ -6,7 +6,7 @@ title: IT Helpdesk Manager & Systems Administrator
 ---
 - **Led a team of 5 IT technicians**, providing **helpdesk support for the Applied Analytics division**.
 - Administered **Loan Origination System (LOS) servers**, ensuring system reliability and security.
-- Managed **Active Directory, VMware, and Windows Server** environments for the division.
+- Managed the division's **Active Directory, VMware, and Windows Server** environments.
 - Oversaw **data center operations, server maintenance, and infrastructure upgrades**.
 - Played a **key role in business continuity planning** — during the **Mira Mesa fire**,
   successfully transitioned all employees to remote work using **Citrix virtualization**.

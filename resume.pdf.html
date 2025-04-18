@@ -1,11 +1,10 @@
 ---
-layout: default
-pdf: true
+layout: default_pdf
 ---
 {% assign resume = site.data.resume %}
 {% for element in resume %}
   {% if element.section == 'summary' %}
-    <section{% if itemtype %} itemscope itemtype="{{ itemtype }}"{% endif %}>
+    <section class="summary"{% if itemtype %} itemscope itemtype="{{ itemtype }}"{% endif %}>
       <aside>
         <h2 id="{{ element.section }}"{% if itemtype %} itemprop="name"{% endif %}>{{ element.title }}</h2>
       </aside>
@@ -16,7 +15,7 @@ pdf: true
   {% endif %}
 
   {% if element.section == 'skills' %}
-    <section{% if itemtype %} itemscope itemtype="{{ itemtype }}"{% endif %}>
+    <section class="skills"{% if itemtype %} itemscope itemtype="{{ itemtype }}"{% endif %}>
       <aside>
         <h2 id="{{ element.section }}"{% if itemtype %} itemprop="name"{% endif %}>{{ element.title }}</h2>
       </aside>
@@ -31,9 +30,9 @@ pdf: true
   {% endif %}
 
   {% if element.section == 'experience' %}
-    <section{% if itemtype %} itemscope itemtype="{{ itemtype }}"{% endif %}>
+    <section class="experience"{% if itemtype %} itemscope itemtype="{{ itemtype }}"{% endif %}>
       <aside>
-    <h2 id="{{ element.section }}"{% if itemtype %} itemprop="name"{% endif %}>{{ element.title }}</h2>
+        <h2 id="{{ element.section }}"{% if itemtype %} itemprop="name"{% endif %}>{{ element.title }}</h2>
       </aside>
 
       {% assign jobs = site.jobs | sort: 'endDate' | reverse %}
@@ -44,7 +43,7 @@ pdf: true
   {% endif %}
 
   {% if element.section == 'educations-certifications' %}
-    <section{% if itemtype %} itemscope itemtype="{{ itemtype }}"{% endif %}>
+    <section class="educations-certifications"{% if itemtype %} itemscope itemtype="{{ itemtype }}"{% endif %}>
       <aside>
         <h2 id="{{ element.section }}"{% if itemtype %} itemprop="name"{% endif %}>{{ element.title }}</h2>
       </aside>

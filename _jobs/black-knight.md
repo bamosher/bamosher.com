@@ -4,7 +4,7 @@ startDate: 2004-01-01
 endDate: 2023-01-01
 title: Senior Citrix Administrator
 ---
-- Administered, mentored subordinate admins, and documented the Citrix Virtual
+- Administered and mentored subordinate admins, and documented the Citrix Virtual
   Desktop Environments.
 - Managed **Citrix Application Layering, Citrix PVS, Citrix Windows Environment
   Management, Citrix CVAD, Citrix Storefront, and Citrix NetScaler**.

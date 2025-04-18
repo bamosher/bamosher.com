@@ -16,7 +16,6 @@ exclude:
   - package.json
 gems:
   - jekyll-feed
-  - jekyll-pdf
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-timeago
