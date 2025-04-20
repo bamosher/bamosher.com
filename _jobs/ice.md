@@ -1,7 +1,7 @@
 ---
 employer: ICE
 startDate: 2004-01-01
-endDate: 2025-01-01
+endDate: 2025-02-28
 title: Senior Citrix Administrator
 ---
 - Administered and mentored subordinate admins, and documented the Citrix Virtual
